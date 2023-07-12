@@ -15,6 +15,11 @@ body{
   background-color: #fff;
 }
 
+*:focus{
+  outline:  2px dotted #DE2E54;
+  outline-offset: 2px;
+}
+
 /* Container */
 
 .container{
@@ -27,3 +32,96 @@ body{
 }
 
 /* SITE-HEADER */
+.site-header{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.site-header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* SITE-LOGO */
+.site-logo{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #222;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.site-logo:hover{
+  color: #DE2E54;
+}
+.site-logo:active{
+  opacity: 0.6;
+}
+.site-header-logo-img{
+  margin-right: 16px;
+}
+
+/* SITENAV */
+
+.sitenav{
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform:uppercase;
+}
+
+.sitenav-list{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sitenav-item:not(:last-child){
+  margin-right: 32px;
+}
+
+.sitenav-link{
+  display: block;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.sitenav-link:hover{
+  color: #DE2E54;
+}
+
+.sitenav-link:active{
+  opacity: 0.6;
+}
+
+
+/* MAIN-LINK */
+.main-link{
+  display: inline-block;
+  padding: 10px 22px;
+  border:  2px solid transparent;
+  font-family: "Open sans","Arial",sans-serif;
+  text-decoration: none;
+  background-color: #DE2E54;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border-radius: 8px;
+}
+
+.main-link:hover{
+  border-color: #DE2E54;
+ background-color: #fff;
+ color: #DE2E54;
+}
+
+.main-link:active{
+  background-color: #DE2E54;
+  color: #fff;
+  opacity: 0.6;
+}
